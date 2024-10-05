@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "declaration": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      "ethers": ["ethers/lib"],
+      "@config": ["config/conf.dev.ts"],
+      "typechain-types": ["./typechain-types"],
+      "@ethersproject/contracts": ["@ethersproject/contracts/lib"]
+    },
+  },
+  "typeRoots": ["./node_modules/@types", "./typechain-types", "./types"],
+  "include": [
+    "./scripts",
+    "./test",
+    "./typechain",
+    "config/conf.test.ts"
+  ],
+  "files": [
+    "./hardhat.config.ts"
+  ]
+}

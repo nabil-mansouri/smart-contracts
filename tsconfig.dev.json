@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "module": "AMD",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "downlevelIteration": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noFallthroughCasesInSwitch": true,
+    "target": "es5",
+    "outDir": "dist",
+    "declaration": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": false,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "isolatedModules": true,
+    "incremental": true,
+    "baseUrl": "./",
+    "paths": {
+      "ethers": ["ethers/lib"],
+      "@config": ["./config/conf.dev.ts"],
+      "typechain-types": ["./typechain-types"],
+      "@ethersproject/contracts": ["@ethersproject/contracts/lib"]
+    },
+  },
+  "typeRoots": ["./node_modules/@types", "./typechain-types"],
+  "exclude": ["./dist/**/*", "./node_modules/**/*"],
+  "include": ["src/**/*.ts", "src/*ts", "src/**/*.tsx", "./config/conf.dev.ts"]
+}
